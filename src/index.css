@@ -1,0 +1,157 @@
+/*
+ * ────────────────────────────────────────────────
+ *  Global styles & design tokens (GitHub-inspired)
+ * ────────────────────────────────────────────────
+ */
+
+/* ═══ Dark theme (default) ═══════════════════════ */
+:root,
+[data-theme='dark'] {
+  /* Backgrounds */
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-tertiary: #1c2128;
+
+  /* Text */
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-text-tertiary: #6e7681;
+
+  /* Borders */
+  --color-border: #30363d;
+  --color-border-hover: #484f58;
+
+  /* Accent (GitHub blue) */
+  --color-accent: #58a6ff;
+
+  /* Success (GitHub green) */
+  --color-success: #3fb950;
+
+  /* Badges (topic tags) */
+  --color-badge-bg: #388bfd1a;
+  --color-badge-text: #58a6ff;
+  --color-badge-border: transparent;
+  --color-badge-bg-hover: #388bfd33;
+
+  /* Contribution graph cells */
+  --color-contribution-0: #161b22;
+  --color-contribution-1: #0e4429;
+  --color-contribution-2: #006d32;
+  --color-contribution-3: #26a641;
+  --color-contribution-4: #39d353;
+  --color-contribution-border: rgba(27, 31, 35, 0.06);
+
+  /* Scrollbar */
+  --color-scrollbar-thumb: #30363d;
+  --color-scrollbar-track: #0d1117;
+}
+
+/* ═══ Light theme ════════════════════════════════ */
+[data-theme='light'] {
+  /* Backgrounds */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f6f8fa;
+  --color-bg-tertiary: #eaeef2;
+
+  /* Text */
+  --color-text-primary: #1f2328;
+  --color-text-secondary: #656d76;
+  --color-text-tertiary: #8b949e;
+
+  /* Borders */
+  --color-border: #d0d7de;
+  --color-border-hover: #afb8c1;
+
+  /* Accent */
+  --color-accent: #0969da;
+
+  /* Success */
+  --color-success: #1a7f37;
+
+  /* Badges */
+  --color-badge-bg: #ddf4ff;
+  --color-badge-text: #0969da;
+  --color-badge-border: transparent;
+  --color-badge-bg-hover: #b6e3ff;
+
+  /* Contribution graph cells */
+  --color-contribution-0: #ebedf0;
+  --color-contribution-1: #9be9a8;
+  --color-contribution-2: #40c463;
+  --color-contribution-3: #30a14e;
+  --color-contribution-4: #216e39;
+  --color-contribution-border: rgba(27, 31, 35, 0.06);
+
+  /* Scrollbar */
+  --color-scrollbar-thumb: #d0d7de;
+  --color-scrollbar-track: #ffffff;
+}
+
+/* ═══ Reset & base ═══════════════════════════════ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Scrollbar styling (Webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
