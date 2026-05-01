@@ -22,9 +22,9 @@ export const siteConfig: SiteConfig = {
 
   /* ── Social links ─────────────────────────────────────────── */
   socialLinks: [
-    { label: 'GitHub', href: 'https://github.com', icon: 'github' },
-    { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' },
-    { label: 'Email', href: 'mailto:hello@example.com', icon: 'email' },
+    { label: 'GitHub', href: 'https://github.com/glixcode', icon: 'github' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/gilx-gucela', icon: 'linkedin' },
+    { label: 'Email', href: 'mailto:gilbertgucela11@gmail.com', icon: 'email' },
   ],
 
   /* ── About ────────────────────────────────────────────────── */
