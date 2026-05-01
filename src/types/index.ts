@@ -23,6 +23,19 @@ export interface Achievement {
   description: string;
 }
 
+/** Project card data */
+export interface Project {
+  title: string;
+  description: string;
+  techStack: string[];
+  githubUrl: string;
+  liveUrl?: string;
+  language: string;        // primary language (for the color dot)
+  languageColor: string;   // hex color for the dot
+  stars?: number;
+  forks?: number;
+}
+
 /** Experience entry */
 export interface Experience {
   role: string;
