@@ -155,7 +155,8 @@
     max-width: 100%;
   }
 
-  .socials {
+  .socials,
+  .actions {
     justify-content: center;
   }
 }
