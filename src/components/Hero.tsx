@@ -62,7 +62,7 @@ export default function Hero({ name, role, introduction, avatarUrl, socialLinks 
             </div>
 
             <a
-              href="/cv.pdf"
+              href="/GilbertGucela.pdf"
               download
               className={styles.downloadBtn}
               aria-label="Download CV"
