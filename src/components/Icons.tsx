@@ -10,7 +10,7 @@ interface IconProps {
 
 export function GitIcon({ size = 20, className }: IconProps) {
   return (
-    <img src="/git-icon-light.svg" className={className} width={size} height={size} alt="Git" />
+    <img src="/antigravity-icon.png" className={className} width={size} height={size} alt="Git" />
   );
 }
 
